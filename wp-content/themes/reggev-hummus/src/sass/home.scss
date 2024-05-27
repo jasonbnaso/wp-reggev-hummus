@@ -1,0 +1,180 @@
+.home {
+  .intro {
+    text-align: center;
+    a.intro-cta {
+      margin: 0 1vh 20vh 0;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 35px 30px!important;
+      border: 1px solid #3c5349;
+      border-radius: 8px;
+      background: #729d8a;
+      background: -webkit-gradient(linear, left top, left bottom, from(#729d8a), to(#3c5349));
+      background: -moz-linear-gradient(top, #729d8a, #3c5349);
+      background: linear-gradient(to bottom, #729d8a, #3c5349);
+      // -webkit-box-shadow: #89bca6 0px 0px 40px 0px;
+      // -moz-box-shadow: #89bca6 0px 0px 40px 0px;
+      // box-shadow: #89bca6 0px 0px 20px 0px;
+      text-shadow: #24312b 1px 1px 1px;
+      font: normal normal bold 20px arial;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    a.intro-cta:hover,
+    a.intro-cta:focus {
+      border: 1px solid #476256;
+      background: #89bca6;
+      background: -webkit-gradient(linear, left top, left bottom, from(#89bca6), to(#486458));
+      background: -moz-linear-gradient(top, #89bca6, #486458);
+      background: linear-gradient(to bottom, #89bca6, #486458);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    a.intro-cta:active {
+      background: #3c5349;
+      background: -webkit-gradient(linear, left top, left bottom, from(#3c5349), to(#3c5349));
+      background: -moz-linear-gradient(top, #3c5349, #3c5349);
+      background: linear-gradient(to bottom, #3c5349, #3c5349);
+    }
+  }
+  .locations {
+    background-color: $base-color-dark;
+    a {
+      color: #fff;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .custom-item {
+      padding: 20px;
+    }
+    .location-img {
+      border-radius: 6px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+    }
+    .location-info {
+      margin-top: 1rem;
+    }
+    .hover-effect figure {
+      position: relative;
+    }
+    .hover-effect figure::before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+    }
+    .hover-effect figure:before {
+      -webkit-animation: shine 2.5s infinite;
+      animation: shine 2.5s infinite;
+    }
+    @-webkit-keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+    @keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+  }
+  .map-title {
+    color: $font-color-dark;
+    margin-bottom: 20px;
+  }
+  .map-img {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  }
+  .parallax {
+    position: relative;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #fff !important;
+    }
+    .parallax-image {
+      text-align: center;
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+      min-height: 700px;
+    }
+    .parallax-announcement {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding-left: 65px;
+    }
+    .parallax-title {
+      color: #fff;
+      font-size: 60px;
+    }
+    .parallax-image-overlay {
+      background: rgba(black, 0.4);
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.caption-text {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgb(0 0 0 / 57%);
+
+  h2 {
+    margin-top: 20%;
+  }
+}
+.post-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.post-thumb:hover .caption-text {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  transition: background-color 1s;
+}
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: inherit;
+  content: " ";
+}
